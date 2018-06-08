@@ -9,7 +9,9 @@ class PriorityQueue:
         self._index = 0
 
     def push(self, item, priority):
-        heapq.heappush(self._queue, (-priority, self._index, item))
+        heapq.heappush(self._queue, (-priority, self._index, item) )"""采用三元数组的方法。
+        设置一个优先级，一个条目值，一个任务值。即使当两个任务有相同优先级的时候，因为条目值不一样可以帮助cpu来裁决它们被加载的顺序。 
+        """
         self._index += 1
 
     def pop(self):
@@ -21,6 +23,9 @@ class Item:
         self.name = name
     def __repr__(self):
         return 'Item({!r})'.format(self.name)
+    '''一个对象本身不是str，ascii，repr格式，
+        可以使用!s、!a、!r，将其转成str，ascii，repr
+        '''
 
 q = PriorityQueue()
 q.push(Item('foo'), 1)
