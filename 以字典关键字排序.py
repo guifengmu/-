@@ -1,7 +1,7 @@
 #!/use/bin/env python3
 #-*-coding: utf-8 -*-
 
-from collections import itemgetter
+from operator import itemgetter
 
 rows = [
 {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
