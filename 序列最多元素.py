@@ -19,4 +19,6 @@ print(top_three)
 for key in words:
   words_count[key]+=1
   
+  #，Counter 对象在几乎所有需要制表或者计数数据的场合是非常有用的工具。
+  
   
