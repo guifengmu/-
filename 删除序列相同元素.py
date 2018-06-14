@@ -14,3 +14,7 @@ def deque(items,key=None):
 b= list(deque(a,lambda d:(d['x'],d['y'])))
 
 c = list(deque(a,lambda d:d['x']))
+
+
+with open(compfile,'r') as f:
+   for line in deque(f):
