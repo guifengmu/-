@@ -27,3 +27,8 @@ def generate_token(pat,text):
     
 for tok in generate_token(master_pat,text):
   print(tok)
+
+Tokens = (tok for tok in generate_tiken(master_pat,text) if tok.type != 'WS')
+
+for tok in Tolens:
+  print(tok)
